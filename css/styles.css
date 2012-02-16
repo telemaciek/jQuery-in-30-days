@@ -2,13 +2,13 @@
 body {
 	font-size: 67%;
 	background-color: #f0f0f0;
+	font-family: Helvetica, Arial, sans-serif;
 }
 body.index {
-	font-family: Helvetica, Arial, sans-serif;
-	background: -webkit-gradient(radial, 80% 20%, 0, 80% 40%, 100, from(#ffffff), to(#000000));
-	background: -webkit-radial-gradient(80% 20%, closest-corner, #1a82f7, #2F2727);
+	background: -webkit-gradient(radial, 200px 200px, 0, 200px 200px, 100, from(#fff), to(#ddd));
+	background: -webkit-radial-gradient(200px 200px, closest-corner, #fff, #ddd);
 	background: -moz-radial-gradient(200px 200px, #fff, #ddd);
-	background: -ms-radial-gradient(80% 20%, closest-corner, #1a82f7, #2F2727);
+	background: -ms-radial-gradient(200px 200px, closest-corner, #fff, #ddd);
 }
 .container {
 	padding: 20px;
