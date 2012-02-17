@@ -1,4 +1,27 @@
 body {
-	font-family: sans-serif !important;
+	font-family: Helvetica, Arial, sans-serif;
+	padding-left: 100px;
+	padding-top: 50px;
+}
 
+h1 {
+	font-size: 2.5em;
+	margin-bottom: 50px;
+}
+
+h2 {
+	
+}
+p {
+	float:left; 
+	width: 400px;
+	padding-bottom: 20px;
+}
+ul.switchlinks {
+	position:absolute; 
+	left: 600px;
+	top: 300px;
+}
+ul.backlink li a {
+	
 }
