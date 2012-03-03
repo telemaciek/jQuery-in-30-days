@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="pl"><head>
+<meta charset="utf-8" /> 
+<link rel="stylesheet" href="../css/reset.css" type="text/css" />
+<link rel="stylesheet" href="../css/stylexSs.css" type="text/css" />
+<link rel="stylesheet" href="future.css" type="text/css" class="switchsheet" />
+<link href='http://fonts.googleapis.com/css?family=Lobster|Maven+Pro' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<title>
+jQuery in 30 days
+</title>
+</head>
+<body class="styleswitcher">
+<div class="container">
+	<h1>
+		Stylesheet Switcher
+	</h1>
+	
+	
+	<style>
+.team_member {height: 375px; width: 246px; position:relative; background-color: pink; margin-right: 4px; margin-bottom: 10px; float:left;}
+.team_member:hover {background-position: 0 -375px;}
+.team_member h3, .team_member p.description {background-color: rgba(0,0,0,0.5); width: 239px; padding: 4px; position: absolute; left: 0; margin:0; color: #fff;}
+
+.team_member h3 {top:0;}
+.team_member p.description {bottom: 0;}
+</style>
+
+
+<div class="team_member" style="background-image: url(/images/team/mgebik.jpg);">
+    <h3>Name</h3>
+    <p class="description">
+        Lorem ipsum.
+    </p>
+</div>
+
+<div class="team_member" style="background-image: url(/images/team/mgebik.jpg);">
+    <h3>Name</h3>
+    <p class="description">
+        Lorem ipsum.
+    </p>
+</div>
+
+<div class="team_member" style="background-image: url(/images/team/mgebik.jpg);">
+    <h3>Name</h3>
+    <p class="description">
+        Lorem ipsum.
+    </p>
+</div>
+
+<script type="text/javascript">
+(function() {
+	
+	var team_member = $('div.team_member');
+	
+	$(team_member).children().hide().end();
+	
+	$(team_member).on('mouseenter', function() {
+	
+		$(this).children().slideDown().end().siblings().children().slideUp();
+	
+	});
+	
+})();
+</script>
+	
+	
+	<ul class="backlink">
+		<li>
+			<a href="/stylesheet-switcher/index.html" class="back">&laquo; Back to list of projects?</a>
+		</li>
+	<ul>
+	
+</div>
+
+
+</body></html>

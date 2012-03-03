@@ -14,6 +14,7 @@ body {
 h1 {
 	font-size: 40px;
 	padding: 50px 0;
+	font-family: 'Special Elite', Helvetica, Arial, sans-serif;
 }
 blockquote, 
 ul.switchlinks {
@@ -41,6 +42,17 @@ cite {
 }
 ul.switchlinks {
 	margin-left: -400px;
+	padding: 40px 0 0 40px;
+}
+ul.switchlinks a.past {
+	display:block;
+	width: 272px;
+	height: 272px;
+	background: url(stamp.png) no-repeat;
+	text-indent: -9999px;
+}
+ul.switchlinks a.future {
+	display:none;
 }
 
 div.attribution {
@@ -53,4 +65,7 @@ div.attribution {
 }
 div.attribution a {
 	color: #222;
+}
+div.attribution p.future {
+	display:none;
 }
