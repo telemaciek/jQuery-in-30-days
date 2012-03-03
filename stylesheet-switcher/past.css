@@ -1,4 +1,71 @@
-body {
-	font-family: Papyrus, Georgia, serif;
 
+
+/* The actual css */
+
+body {	
+	text-align: center;
+	background: url(wright_brothers.jpg) 50% 50% no-repeat;
+}
+.container {
+	font-family: Helvetica, Arial, sans-serif;
+	padding-bottom: 50px;
+}
+
+h1 {
+	font-size: 40px;
+	padding: 50px 0;
+	font-family: 'Special Elite', Helvetica, Arial, sans-serif;
+}
+blockquote, 
+ul.switchlinks {
+	position: absolute;
+	left: 50%;
+	width: 260px;
+	height: 360px;
+}
+blockquote {
+	text-align: left;
+	background: url(paper.png) no-repeat;
+	padding: 45px 85px 45px 45px;
+	line-height: 25px;
+	font-family: 'Special Elite', Helvetica, Arial, sans-serif;
+}
+cite {
+	position: absolute;
+	top: 530px;
+	z-index: 10;
+	left: 50%;
+	width: 320px;
+	text-align: right;
+	font-weight: bold;
+	font-family: 'Special Elite', Helvetica, Arial, sans-serif;
+}
+ul.switchlinks {
+	margin-left: -400px;
+	padding: 40px 0 0 40px;
+}
+ul.switchlinks a.future {
+	display:block;
+	width: 272px;
+	height: 272px;
+	background: url(stamp.png) no-repeat;
+	text-indent: -9999px;
+}
+ul.switchlinks a.past {
+	display:none;
+}
+
+div.attribution {
+	position: absolute;
+	left: 50%;
+	top: 600px;
+	width: 300px;
+	padding: 0 50px;
+	font-size: 12px;
+}
+div.attribution a {
+	color: #222;
+}
+div.attribution p.past {
+	display:none;
 }

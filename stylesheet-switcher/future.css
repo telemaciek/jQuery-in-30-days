@@ -4,17 +4,21 @@
 
 body {	
 	text-align: center;
-	background: url(wright_brothers.jpg) 50% 50% no-repeat;
+	background: url(shuttle_landing.jpg) 50% 50% no-repeat;
 }
 .container {
 	font-family: Helvetica, Arial, sans-serif;
 	padding-bottom: 50px;
 }
-
+h1, blockquote, cite {
+	font-family: Console, monospace;
+	color: #00FF08;
+}
 h1 {
 	font-size: 40px;
 	padding: 50px 0;
-	font-family: 'Special Elite', Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	text-shadow: #111 0px 2px;
 }
 blockquote, 
 ul.switchlinks {
@@ -25,10 +29,12 @@ ul.switchlinks {
 }
 blockquote {
 	text-align: left;
-	background: url(paper.png) no-repeat;
-	padding: 45px 85px 45px 45px;
+	background: #111;
+	padding: 45px 65px 5px 45px;
+	margin-bottom: 30px;
+	border: solid #00FF08 1px;
+	outline: #111 solid 10px;
 	line-height: 25px;
-	font-family: 'Special Elite', Helvetica, Arial, sans-serif;
 }
 cite {
 	position: absolute;
@@ -38,7 +44,6 @@ cite {
 	width: 320px;
 	text-align: right;
 	font-weight: bold;
-	font-family: 'Special Elite', Helvetica, Arial, sans-serif;
 }
 ul.switchlinks {
 	margin-left: -400px;
@@ -48,8 +53,12 @@ ul.switchlinks a.past {
 	display:block;
 	width: 272px;
 	height: 272px;
-	background: url(stamp.png) no-repeat;
+	background: url(arrow.png) no-repeat;
 	text-indent: -9999px;
+	opacity: 0.5;
+}
+ul.switchlinks a.past:hover {
+	opacity: 0.8;
 }
 ul.switchlinks a.future {
 	display:none;
@@ -58,7 +67,7 @@ ul.switchlinks a.future {
 div.attribution {
 	position: absolute;
 	left: 50%;
-	top: 600px;
+	top: 630px;
 	width: 300px;
 	padding: 0 50px;
 	font-size: 12px;
