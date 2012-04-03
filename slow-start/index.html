@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="pl"><head>
+<meta charset="utf-8" /> 
+<link rel="stylesheet" href="../css/reset.css" type="text/css" />
+<link rel="stylesheet" href="../css/backlink.css" type="text/css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<title>
+name of project - jQuery in 30 days
+</title>
+<style>
+* { 
+	background-repeat: 		no-repeat;
+	vertical-align: 		middle;
+	position: 				relative; 
+	-moz-box-sizing:		border-box; 
+	-webkit-box-sizing: 	border-box; 
+	box-sizing: 			border-box;
+	}
+body {
+	font-family: 	Myriad Pro, Helvetica, Arial, sans-serif;
+	background: url(bg.jpg) 0 0;
+}
+h1 {
+	margin:			0 auto;
+	width: 			900px;
+	text-align: 	center;
+	padding: 		50px 0;
+	font-size: 		40px;
+}
+
+.content {
+	width: 			900px;
+	margin: 		0 auto;
+}
+.content div {
+	display:		none;
+	width: 			290px; 
+	height: 		290px;
+	background: 	#aaa;
+	margin: 		5px;
+	padding: 		0 20px;
+	text-align: 	center;
+	line-height: 	290px;
+	font-size: 		30px;
+	color: 			#fefefe;
+	float:			left;
+	background: 	#fefefe url(bg2.jpg);
+}
+.content div:hover {
+	background: 	#fefefe url(bg2.jpg) 100px 10px;
+	font-size:		40px;
+	font-weight: 	700;
+}
+.box1 {}
+
+</style>
+</head>
+<body>
+<div class="container">
+	<h1>
+		Slow Start
+	</h1>
+
+	<div class="content">
+	
+		<noscript>
+			<style>
+				.content div {
+					display: block;
+				}
+			</style>
+		</noscript>
+	
+		<div class="box1">
+			Yes
+		</div>
+		<div class="box2">
+			this
+		</div>
+		<div class="box3">
+			system
+		</div>
+		<div class="box4">
+			is
+		</div>
+		<div class="box5">
+			working
+		</div>
+		<div class="box6">
+			fine!
+		</div>
+		
+		<script>
+			(function startup(jq){
+			    jq.eq(0).fadeIn(200, function(){
+			        (jq=jq.slice(1)).length && startup(jq);
+			    });
+			})($('.content div'))
+		</script>
+	
+	</div>
+</div>
+<ul class="backlink">
+	<li>
+		<a href="../index.html" class="back">
+			&laquo; Back to list of projects
+		</a>
+	</li>
+<ul>
+</body></html>
