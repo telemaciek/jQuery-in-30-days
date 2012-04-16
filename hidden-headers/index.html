@@ -8,16 +8,23 @@
 hidden headers - jQuery in 30 days
 </title>
 <style>
+body {
+	font-family: Helverica, Arial, sans-serif;
+	font-size: 13px;
+	color: #444;
+}
 h1 {
 	padding: 30px 0 50px 0;
 	text-align: center;
 	font: 28px Helvetica, Arial, sans-serif;
-	text-shadow: #888 0 1px;
+	text-shadow: #ddd 0px 2px;
+	color: #222;
 }
 h2 {
 	background: url(h2.png);
 	width: 300px;
 	height: 70px;
+	margin: 0 auto;
 }
 h2.traditional-way {
 	display:block;
@@ -35,7 +42,15 @@ h2.jason-from-37signals {
 	display: inline-block;
 	overflow: hidden;
 }
-
+h2.gallagher {
+	font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+}
+p {
+	margin-top: 50px;
+	text-align: center;
+}
 </style>
 </head><body>
 <div class="container">
@@ -48,9 +63,10 @@ h2.jason-from-37signals {
 		<h2 class="traditional-way">Lorem ipsum</h2>
 		<h2 class="the-kellum-method">Lorem ipsum</h2>
 		<h2 class="jason-from-37signals">Lorem ipsum</h2>
+		<h2 class="gallagher">Lorem ipsum</h2>
 		
 		<p>
-		Traditional, The Kellum Method <a href="http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/">[1]</a>, Jason from 37signals <a href="http://37signals.com/svn/posts/3126-another-9999px">[2]</a>
+		Traditional, The Kellum Method <a href="http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/">[1]</a>, Jason Z. <a href="http://37signals.com/svn/posts/3126-another-9999px">[2]</a>, Nicolas Gallagher <a href="http://nicolasgallagher.com/another-css-image-replacement-technique/">[3]</a>
 		</p>
 		
 	</div>
